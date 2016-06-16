@@ -39,3 +39,7 @@ get_valid_paths_iterator(board, color_i) {
 The pseudocode for `get_valid_paths_iterator` is omitted for simplicity.
 
 [Here is the algorithm in action on a real 8x8 board from the flow game.](https://gfycat.com/MajesticSneakyBaboon)
+
+And here is the final result (in this case, finishes in about 36 seconds).
+
+![](http://i.imgur.com/5IsL1sy.png)
