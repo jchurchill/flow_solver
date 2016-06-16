@@ -1,5 +1,5 @@
-# flow_solver
-Solver and interface for the phone game Flow (an NP-complete problem)
+# Flow Solver
+Solver and interface for the phone game Flow.
 
 Flow is a puzzle game.
 You are presented with a grid containing a set of colored pairs of locations on the grid.
