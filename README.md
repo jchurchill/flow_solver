@@ -30,7 +30,7 @@ function solve(board, color_i) {
 
 get_valid_paths_iterator(board, color_i) {
   // Let color_endpoints = A .. B
-  // Perform a depth first search starting at A, on the graph that is the flow board (where adjacencies are edges).
+  // Perform depth-first search starting at A, on the graph that is the flow board (where adjacencies are edges).
   // Maintain a stack of nodes currently in the path and do not visit a node already in the stack when exploring.
   // Yield the current stack as a path when reaching B at any point during the search.
 }
