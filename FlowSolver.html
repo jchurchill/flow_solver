@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>Flow</title>
+		<script type="text/javascript" src="lazy-min.js"></script>
+		<script type="text/javascript" src="HashSet2.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		
+		<script type="text/javascript" src="flow_solver.js"></script>
+		<script type="text/javascript" src="flow_interface.js"></script>
+
+		<style type="text/css">
+			#flow-grid {
+				margin: auto;
+				background-color: white;
+				border: 1px solid black;
+			}
+			.flow-node {
+				position: relative;
+				border: 1px solid black;
+				box-sizing: border-box;
+				height: 40px;
+				width: 40px;
+			}
+			.flow-node div {
+				border: 3px solid white;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			#flow-grid.editing .flow-node:hover {
+				opacity: 0.9;
+			} 
+			.flow-node.endpoint div {
+				border: none;
+			}
+
+			.buttons {
+				text-align: center;
+				padding: 5px;
+			}
+			button.new-board {
+				display: inline-block;
+				border: 1px solid black;
+				border-radius: 2px;
+				box-shadow: 2px 2px;
+				margin: 10px;
+			}
+
+			.solve-info {
+				text-align: center;
+				margin: 10px;
+			}
+
+			.solve-msg {
+				margin: 10px;
+				font-weight: bold;
+			}
+		</style>	
+	</head>
+	<body>
+		<div> Flow Solver </div>
+		<div class="buttons">
+			<button class="new-board" data-sidelen="5">5 x 5</button>
+			<button class="new-board" data-sidelen="6">6 x 6</button>
+			<button class="new-board" data-sidelen="7">7 x 7</button>
+			<button class="new-board" data-sidelen="8">8 x 8</button>
+			<button class="new-board" data-sidelen="9">9 x 9</button>
+			<button class="new-board" data-sidelen="10">10 x 10</button>
+			<button class="new-board" data-sidelen="11">11 x 11</button>
+			<button class="new-board" data-sidelen="12">12 x 12</button>
+			<button class="new-board" data-sidelen="13">13 x 13</button>
+			<button class="new-board" data-sidelen="14">14 x 14</button>
+		</div>
+		<table id="flow-grid" cellpadding="0" cellspacing="0"></table>
+		<div class="solve-info">
+			<button class="solve">Solve</button>
+			<div class="solve-msg"></div>
+		</div>
+	</body>
+</html>
